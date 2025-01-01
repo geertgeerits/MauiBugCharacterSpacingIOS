@@ -29,7 +29,7 @@
                 x:Name="CounterBtn"
                 WidthRequest="360"
                 FontSize="20"
-                CharacterSpacing="6"
+                CharacterSpacing="8"
                 Text="Click me"
                 Clicked="OnCounterClicked" />
         </VerticalStackLayout>
