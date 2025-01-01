@@ -1,0 +1,28 @@
+﻿namespace MauiBugCharacterSpacingIOS
+{
+    public partial class MainPage : ContentPage
+    {
+        int count = 0;
+
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        private void OnCounterClicked(object sender, EventArgs e)
+        {
+            count++;
+
+            if (count == 1)
+            {
+                CounterLbl.Text = $"Clicked {count} time";
+                CounterBtn.Text = $"Clicked {count} time";
+            }
+            else
+            {
+                CounterLbl.Text = $"Clicked {count} times";
+                CounterBtn.Text = $"Clicked {count} times";
+            }
+        }
+    }
+}

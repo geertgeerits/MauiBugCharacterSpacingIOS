@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiBugCharacterSpacingIOS.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                WidthRequest="360"
+                Text="Label:"
+                Style="{StaticResource Headline}" />
+
+            <Label
+                x:Name="CounterLbl"
+                WidthRequest="360"
+                CharacterSpacing="8"
+                Text="Test"
+                Style="{StaticResource SubHeadline}" />
+
+            <Label
+                WidthRequest="360"
+                Text="Button:"
+                Style="{StaticResource Headline}" />
+
+            <Button
+                x:Name="CounterBtn"
+                WidthRequest="360"
+                FontSize="20"
+                CharacterSpacing="6"
+                Text="Click me"
+                Clicked="OnCounterClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
